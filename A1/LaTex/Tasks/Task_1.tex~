@@ -1,0 +1,9 @@
+\section{Task 1}
+
+\subsection{a}
+
+$p(n) = 8p(\frac{n}{2}) + n^2$
+Vi bruger sætning 1 side 94 og får, at $a = 8$, $b = 2$ og $f(n) = n^2$.
+Dvs. vi har:
+$$n^{log_b(a)} = n^{log_2(8)} = \Theta(n^{log_2(8)}) = \Theta(n^3)$$
+Dvs. at $p(n) = \Theta(n^3)$.

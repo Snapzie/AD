@@ -1,0 +1,32 @@
+\section{Task 1}
+
+\subsection{1}
+
+$p(n) = 8p(\frac{n}{2}) + n^2$
+Vi bruger sætning 1 side 94 og får, at $a = 8$, $b = 2$ og $f(n) = n^2$.
+Dvs. vi har:
+$$n^{log_b(a)} = n^{log_2(8)} = \Theta(n^{log_2(8)}) = \Theta(n^3)$$
+Fordi $n^2 = O(n^{3-\varepsilon})$ hvor $\varepsilon \leq 1$, gælder det pr. sætning 1, at $p(n) = \Theta(n^3)$.
+
+\subsection{2}
+
+$p(n) = 8p(\frac{n}{4}) + n^3$
+Vi bruger sætning 3 side 94 og får, at $a = 8$, $b = 4$ og $f(n) = n^3$.
+Dvs. vi har:
+$$n^3 = \Omega(n^{log_4(8)+\varepsilon}) = \Omega(n^{\frac{3}{2}})$$
+hvilket gælder for $\varepsilon \leq \frac{3}{2}$.
+Derudover skal det gælde, at $8(\frac{n}{4})^3 \leq cn^3$ for $c < 1$ for alle $n \geq n_0$. Vi omskriver:
+$$8(\frac{n}{4})^3 = 8 \cdot \frac{1}{4} \cdot n^3 = 2n^3$$
+Dvs. for $c \geq 2$, da vil $2n^3 \leq cn^3$.
+Dvs. at $p(n) = \Theta(n^3)$.
+
+\subsection{3}
+
+$p(n) = 10p(\frac{n}{9}) + nlog_2(n)$
+Vi bruger sætning 1 side 94 og får, at $a = 10, b = 9$ og $f(n) = nlog_2(n)$.
+Dvs. vi har:
+$$nlog_2(n) = O(n^{log_9(10)+\varepsilon}) = O(n^{1.048 - \varepsilon})$$
+hvilket gælder for alle $\varepsilon \leq 0.48$.
+Dette afledes af den generelle regel, at $log_a(x) = O(x^b)$ for $a > 1$ og $b > 0$.
+Fordi $nlog_2(n) = O(n^{1.048 - \varepsilon})$ for $\varepsilon \leq 0.48$, gælder det pr. sætning 1, at $p(n) = \Theta(n^{1.048})$.
+
