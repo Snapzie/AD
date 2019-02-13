@@ -3,3 +3,14 @@
 \subsection{1}
 
 $p(n) = p(\frac{n}{2}) + p(\frac{n}{3}) + n$
+
+\subsection{2}
+
+$p(n) = \sqrt(n)p(\sqrt(n)) + \sqrt(n)$
+Vi omskriver $p(n)$ til noget simplere ved at lade $m = lg(n)$:
+$$p(2^m) = 2^{\frac{m}{2}}p(2^{\frac{m}{2}}) + 2^{\frac{m}{2}}$$
+Dernæst definerer vi en ny reccurence være givet ved $s(m) = p(2^m)$:
+$$s(m) = 2^{\frac{m}{2}}p(\frac{m}{2}) + 2^{\frac{m}{2}}$$
+Vi genkender, at $s(m)$ har løsningen $s(m) = O(2^mlg(m))$.
+Dvs:
+$$p(n) = p(2^m) = s(m) = O(2^mlg(m)) = O(nlg(lg(n)))$$
