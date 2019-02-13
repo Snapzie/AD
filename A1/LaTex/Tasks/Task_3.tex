@@ -1,0 +1,21 @@
+\section{Task 3}
+
+\begin{verbatim}
+    Sort(A)
+        maxLen = 2 log (A.Len)
+        IntroSort(A, maxLen)
+        return(A)
+	
+    IntroSort(A,maxDepth)
+        n = A.Len
+        if (maxDepth == 0)
+            HeapSort(A)
+				
+        elif(n < c)
+            InsertionSort(A)
+		
+        else
+            p = RandomPartition(A)
+            IntroSort(A[0:p], maxDepth-1)
+            IntroSort(A[p+1:n], maxDepth-1)
+\end{verbatim}
