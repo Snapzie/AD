@@ -1,5 +1,6 @@
 #General crap
 .DS_Store
+*/LaTex/*.DS_Store
 *~
 */*.dSYM
 */*.dSYM
