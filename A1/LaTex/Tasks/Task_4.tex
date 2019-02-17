@@ -1,9 +1,5 @@
 \section{Task 4}
-
-Heapsort-sort kører i worst-case $O(\text{n log n})$.\\
-Insertion-sort kører i worst-case $O(n^2)$, men da vi kun kører insertion-sort når $j-i = n < c$ hvor c er en konstant som typisk er 16 eller 32, så vil vores insertion-sort bliver $16^2$ eller $32^2$, som er en konstant. Derfor er worst-case køretiden for insertion-sort i vores algoritme altid en konstant, f.eks. $16^2$, dvs. $O(1)$.\\
-Ved hver opsplitning i sub-arrays, i quick-sort, bliver der udført en operation på hvert element (sammenligning med pivor element) i hver af de nye under arrays, dvs. at der ved hvert nivau er n-operationer i alt. Da vores recursions dybde maks vil være $2 \text{log n}$, og der på hvert nivaeu er n-operationer, vil quick-sort i worst-case køre $O(2\text{n log n})$.\\\\
-Vi har derfor at worst-case køretiden for intro-sort er:
-$$
-2\text{n log n} + 16^2 + \text{n log n} = O(\text{n log n})
-$$ 
+Vi er blevet bedt om at redegøre for køretiden af introsort.\\\\
+Heapsort-sort kører i worst-case $O(\text{n log n})$. Insertion-sort kører i worst-case $O(n^2)$, men da vi kun kører insertion-sort når $j-i = n < c$ hvor c er en konstant som typisk er 16 eller 32, så vil insertion-sort i forhold til de andre algoritmer køre i konstant tid. Derfor er worst-case køretiden for insertion-sort i vores algoritme konstant dvs. $O(1)$.\\
+Ved hver opsplitning i sub-arrays, i quick-sort, bliver der udført en operation på hvert element (sammenligning med pivot element) i hver af de nye under arrays, dvs. at der ved hvert niveau er n-operationer i alt. Da vores recursions dybde maks vil være $2 \text{log n}$, og der på hvert niveau er n-operationer, vil quick-sort i worst-case køre $O(2\text{n log n})$.\\\\
+Vi har derfor at worst-case køretiden for intro-sort er $O(\text{n log n})$.
