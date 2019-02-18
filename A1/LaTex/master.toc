@@ -6,6 +6,6 @@
 \contentsline {section}{\numberline {3}Task 2}{4}{section.3}
 \contentsline {subsection}{\numberline {3.1}1}{4}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}2}{5}{subsection.3.2}
-\contentsline {section}{\numberline {4}Task 3}{6}{section.4}
-\contentsline {section}{\numberline {5}Task 4}{7}{section.5}
-\contentsline {section}{\numberline {6}Task 5}{8}{section.6}
+\contentsline {section}{\numberline {4}Task 3}{7}{section.4}
+\contentsline {section}{\numberline {5}Task 4}{8}{section.5}
+\contentsline {section}{\numberline {6}Task 5}{9}{section.6}

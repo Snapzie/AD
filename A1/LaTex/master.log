@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  17 FEB 2019 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.8)  18 FEB 2019 09:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1432,53 +1432,45 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 (./Tasks/Task_2.tex
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 9.
+<Materials/RecTree.jpg, id=98, 2060.69875pt x 2747.26375pt>
+File: Materials/RecTree.jpg Graphic file (type jpg)
 
-Overfull \hbox (9.31224pt too wide) in paragraph at lines 11--11
-[][][][]\T1/cmr/m/n/12 Hvordan 
- []
+<use Materials/RecTree.jpg>
+Package pdftex.def Info: Materials/RecTree.jpg used on input line 11.
+(pdftex.def)             Requested size: 320.1282pt x 426.79134pt.
 
-
-Overfull \hbox (9.31224pt too wide) in paragraph at lines 11--11
-[][][][]\T1/cmr/m/n/12 Hvordan 
- []
-
-
-Overfull \hbox (9.31224pt too wide) in paragraph at lines 11--11
-[][][][]\T1/cmr/m/n/12 Hvordan 
- []
-
-
-Overfull \hbox (9.31224pt too wide) in paragraph at lines 11--11
-[][][][]\T1/cmr/m/n/12 Hvordan 
+Overfull \hbox (46.92723pt too wide) in paragraph at lines 23--23
+[] 
  []
 
 [4
 
 
-]
-Overfull \hbox (3.83022pt too wide) in paragraph at lines 39--39
+ <./Materials/RecTree.jpg>]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 43.
+
+Overfull \hbox (3.83022pt too wide) in paragraph at lines 43--43
 [][][][]\T1/cmr/m/n/12 Usikker 
  []
 
 
-Overfull \hbox (3.83022pt too wide) in paragraph at lines 39--39
+Overfull \hbox (3.83022pt too wide) in paragraph at lines 43--43
 [][][][]\T1/cmr/m/n/12 Usikker 
  []
 
 
-Overfull \hbox (3.83022pt too wide) in paragraph at lines 39--39
+Overfull \hbox (3.83022pt too wide) in paragraph at lines 43--43
 [][][][]\T1/cmr/m/n/12 Usikker 
  []
 
 
-Overfull \hbox (3.83022pt too wide) in paragraph at lines 39--39
+Overfull \hbox (3.83022pt too wide) in paragraph at lines 43--43
 [][][][]\T1/cmr/m/n/12 Usikker 
  []
 
 
-Overfull \hbox (1.55914pt too wide) in paragraph at lines 41--42
+Overfull \hbox (1.55914pt too wide) in paragraph at lines 45--46
 []\T1/cmr/m/n/12 Vi har dermed be-vist at for $\OML/cmm/m/it/12 c \OMS/cmsy/m/n
 /12 ^^U []$ \T1/cmr/m/n/12 holder vores ulighed, og er der-for $\OML/cmm/m/it/1
 2 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 O\OT
@@ -1486,30 +1478,30 @@ Overfull \hbox (1.55914pt too wide) in paragraph at lines 41--42
 m/n/12 ))$\T1/cmr/m/n/12 . 
  []
 
-
-Overfull \hbox (14.69847pt too wide) in paragraph at lines 50--50
+[5]
+Overfull \hbox (14.69847pt too wide) in paragraph at lines 54--54
 [][][][]\T1/cmr/m/n/12 Reference 
  []
 
 
-Overfull \hbox (14.69847pt too wide) in paragraph at lines 50--50
+Overfull \hbox (14.69847pt too wide) in paragraph at lines 54--54
 [][][][]\T1/cmr/m/n/12 Reference 
  []
 
 
-Overfull \hbox (14.69847pt too wide) in paragraph at lines 50--50
+Overfull \hbox (14.69847pt too wide) in paragraph at lines 54--54
 [][][][]\T1/cmr/m/n/12 Reference 
  []
 
 
-Overfull \hbox (14.69847pt too wide) in paragraph at lines 50--50
+Overfull \hbox (14.69847pt too wide) in paragraph at lines 54--54
 [][][][]\T1/cmr/m/n/12 Reference 
  []
 
-) [5]
+) [6]
 \openout2 = `Tasks/Task_3.aux'.
 
- (./Tasks/Task_3.tex) [6
+ (./Tasks/Task_3.tex) [7
 
 
 ]
@@ -1525,13 +1517,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--37
 
  []
 
-[7
+[8
 
 
 ]
 \openout2 = `Tasks/Task_5.aux'.
 
- (./Tasks/Task_5.tex) [8
+ (./Tasks/Task_5.tex) [9
 
 
 ] 
@@ -1547,13 +1539,13 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: 4EA9DFA90A10D7FB360B6A54841DC97B;501.
  ) 
 Here is how much of TeX's memory you used:
- 23136 strings out of 492995
- 423430 string characters out of 6132705
- 544798 words of memory out of 5000000
- 26179 multiletter control sequences out of 15000+600000
+ 23123 strings out of 492995
+ 423023 string characters out of 6132705
+ 544654 words of memory out of 5000000
+ 26161 multiletter control sequences out of 15000+600000
  20987 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,94p,866b,714s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,94p,866b,712s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
@@ -1575,10 +1567,10 @@ dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2017/texmf-dist/f
 onts/type1/public/cm-super/sftt1200.pfb>
-Output written on master.pdf (8 pages, 235466 bytes).
+Output written on master.pdf (9 pages, 2006016 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

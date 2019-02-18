@@ -6,11 +6,15 @@ Vi bliver bedt om at løse nedenstående rekursion ved substitution.
 	p(n) = p(\frac{n}{2}) + p(\frac{n}{3}) + n
 \end{equation*}
 For at komme frem til et gæt på en løsning vil vi tegne rekursionstræet:
-\missingfigure{Tegn skitse til rekursionstræ}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=15cm]{Materials/RecTree}
+\end{figure}
+
 Som det ses på træet, så har vi en geometrisk serie. Denne kan omskrives til en sum som følger\footnote{Introduction to algorithms - s. 90}:
-\todo{Hvordan skal følgende skrives op?}
 \begin{align*}
-	T(n) &= cn\left(\frac{5}{6}\right)^i \cdot log(n)\\
+	T(n) &= \left(cn\left(\frac{5}{6}\right)^0 + cn\left(\frac{5}{6}\right)^1 + \cdots + cn\left(\frac{5}{6}\right)^{log_2(n)} + cn\left(\frac{2}{6}\right)^{log_2(n)+1} + \cdots + cn\left(\frac{2}{6}\right)^{log_3(n)}\right)  \cdot log(n)\\
+	&\leq \left(cn\left(\frac{5}{6}\right)^0 + cn\left(\frac{5}{6}\right)^1 + \cdots + cn\left(\frac{5}{6}\right)^{log_3(n)}\right) \cdot log(n)\\
 	&= \sum_{i = 0}^{log_{3}(n-1)}\left(\frac{5}{6}\right)^icn \cdot log(n)\\
 	&\leq \sum_{i = 0}^{\infty}\left(\frac{5}{6}\right)^icn \cdot log(n)\\
 	&= \frac{1}{1-\frac{5}{6}}cn \cdot log(n)\\
