@@ -1,4 +1,4 @@
-#General crap
+ #General crap
 .DS_Store
 */LaTex/*.DS_Store
 *~
@@ -10,6 +10,9 @@
 */LaTex/*.log
 */LaTex/*.aux
 */LaTex/*.toc
+*/LaTex/*.out
+*/LaTex/*.tdo
+*/LaTex/*.synctex.gz
 */LaTex/Tasks/*.log
 */LaTex/Tasks/*.aux
 
