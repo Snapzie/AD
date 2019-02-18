@@ -2,7 +2,7 @@
 
 \subsection{1}
 
-$p(n) = 8p(\frac{n}{2}) + n^2$
+$p(n) = 8p(\frac{n}{2}) + n^2$\\
 Vi bruger sætning 1 side 94 og får, at $a = 8$, $b = 2$ og $f(n) = n^2$.
 Dvs. vi har:
 $$n^{log_b(a)} = n^{log_2(8)} = \Theta(n^{log_2(8)}) = \Theta(n^3)$$
@@ -10,7 +10,7 @@ Fordi $n^2 = O(n^{3-\varepsilon})$ hvor $\varepsilon \leq 1$ for alle $n \geq 0$
 
 \subsection{2}
 
-$p(n) = 8p(\frac{n}{4}) + n^3$
+$p(n) = 8p(\frac{n}{4}) + n^3$\\
 Vi bruger sætning 3 side 94 og får, at $a = 8$, $b = 4$ og $f(n) = n^3$.
 Dvs. vi har:
 $$n^3 = \Omega(n^{log_4(8)+\varepsilon}) = \Omega(n^{\frac{3}{2}})$$
@@ -22,7 +22,7 @@ Dvs. at $p(n) = \Theta(n^3)$.
 
 \subsection{3}
 
-$p(n) = 10p(\frac{n}{9}) + nlog_2(n)$
+$p(n) = 10p(\frac{n}{9}) + nlog_2(n)$\\
 Vi bruger sætning 1 side 94 og får, at $a = 10, b = 9$ og $f(n) = nlog_2(n)$.
 Dvs. vi har:
 $$nlog_2(n) = O(n^{log_9(10)-\varepsilon}) = O(n^{1.048 - \varepsilon})$$

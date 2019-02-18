@@ -38,15 +38,15 @@ Vi kan nu se at hvis $cnlog(2) + n \geq 0$, så holder vores ulighed. Ved at lø
 	c &\geq \frac{-1}{log(2)}
 \end{align*}\todo{Usikker på om uligheden skal vendes}
 
-Vi har dermed bevist at for $c \geq \frac{-1}{log(2)}$ holder vores ulighed, og er derfor $P(n) = O(nlog(n))$.
+Vi har dermed bevist at for $c \geq \frac{-1}{log(2)}$ holder vores ulighed for alle $n \geq n_0$ (Dog bemærkes det, at $\frac{-1}{log(2)} < 0$ og $c$ pr. definition skal være skaprt større end nul, således at uligheden i realiteten kun gælder for alle $c > 0$), og er derfor $P(n) = O(nlog(n))$.
 
 \subsection{2}
 
-$p(n) = \sqrt(n)p(\sqrt(n)) + \sqrt(n)$
+$p(n) = \sqrt(n)p(\sqrt(n)) + \sqrt(n)$\\
 Vi omskriver $p(n)$ til noget simplere ved at lade $m = lg(n)$:
 $$p(2^m) = 2^{\frac{m}{2}}p(2^{\frac{m}{2}}) + 2^{\frac{m}{2}}$$
 Dernæst definerer vi en ny reccurence givet ved $s(m) = p(2^m)$:
 $$s(m) = 2^{\frac{m}{2}}p(\frac{m}{2}) + 2^{\frac{m}{2}}$$
-Vi genkender, at $s(m)$ har løsningen $s(m) = O(2^mlg(m))$\todo{Reference til bogen?}.
+Vi genkender, at $s(m)$ har løsningen $s(m) = O(2^mlg(m))$ (som det fremgår i CLRS side 87).
 Dvs:
 $$p(n) = p(2^m) = s(m) = O(2^mlg(m)) = O(nlg(lg(n)))$$
