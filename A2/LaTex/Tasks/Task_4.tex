@@ -1,0 +1,14 @@
+\section{Task 4}
+\subsection{Bevis for korrektheden af algoritmen}
+
+Da algoritmen udregner selv samme som i Task 1, men denne gang blot gemmer resultater undervejs, opnår denne dynamiske implementering samme resultat som algoritmen i Task 1, hvorfor den nødvendigvis må være korrekt. 
+
+\subsection{Bevis for køretiden af algoritmen}
+
+Vi har et array på størrelse $Cn$, som undervejs udfyldes.
+Når først hver plads er blevet beregnet, da udføres fremtidige kald til den pågøldende plads i konstant tid. Idet algoritmen terminerer, foretages der et sidste kald, som ligeså udføres i konstant tid, hvorfor køretiden bliver $O(Cn+\Theta(1) = O(Cn)$.
+
+\section{Hukommelsesforbrug af algoritmen}
+Algoritmen gør brug af et array af størrelse $Cn$, dvs.
+at algoritmen har et hukommelsesforbrug på $O(Cn)$.
+
