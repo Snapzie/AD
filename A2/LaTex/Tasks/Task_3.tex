@@ -1,2 +1,16 @@
 \section{Task 3}
+Vi bliver bedt om at omsrive vores rekursive formel til pseudokode.
+\begin{lstlisting}
+	N(C, i)
+		if (C == 0)
+			return 1
+		else if (i == 0 || c < 0)
+			return 0
+		else if (A[C, i] != -1)
+			return A[C, i]
+		else
+			A[C, i] = N(C - P[i], i - 1) + N(C, i - 1)
+			return A[C, i]
+\end{lstlisting}
+'C' angiver vores penge mens 'i' indexerer i vores array 'P' som er en liste af priser på øl. Prisen for den i'ende øl er altså P[i]. Array 'A' er et pris array som indeholder priser på de delproblemer som allerede er løst.
 
