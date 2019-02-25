@@ -12,5 +12,5 @@ Vi bliver bedt om at omsrive vores rekursive formel til pseudokode.
 			A[C, i] = N(C - P[i], i - 1) + N(C, i - 1)
 			return A[C, i]
 \end{lstlisting}
-'C' angiver vores penge mens 'i' indexerer i vores array 'P' som er en liste af priser på øl. Prisen for den i'ende øl er altså P[i]. Array 'A' er et pris array som indeholder priser på de delproblemer som allerede er løst.
+'C' angiver vores penge mens 'i' indexerer i vores array 'P' som er en liste af priser på øl. Prisen for den i'ende øl er altså P[i]. Når algoritmen startes skal 'i' altså angives som 'P.len - 1'. Array 'A' er et pris array som indeholder priser på de delproblemer som allerede er løst.
 
