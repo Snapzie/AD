@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+	\usepackage[danish]{babel}
+    \usepackage[margin=1in]{geometry}
+    \usepackage{amsmath}
+    \usepackage[utf8]{inputenc}
+    \usepackage{graphicx}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage[T1]{fontenc}
+    \usepackage{amssymb}
+    \usepackage{listings}
+    \usepackage{minted}
+    \usepackage[colorinlistoftodos]{todonotes}
+    \usepackage{wrapfig}
+    \usepackage{subcaption}
+    \usepackage{hyperref}
+    \usepackage{todonotes}
+    \usepackage[final]{pdfpages}
+    \usepackage{parskip}
+    
+    \pagestyle{fancy}
+    
+    \title{AD A3}
+    \author{Casper Bresdahl whs715\\ Torben Olai Milhøj vrw704\\ Sarah Willumsen zql291\\ }
+    \date{}
+    \begin{document}
+        \maketitle
+        \thispagestyle{empty}
+        \cfoot{Page \thepage ~of \pageref{LastPage}}
+        %Af en eller anden grund stod der INDHOLD i sidehovedet, disse tre linjer fjerner dette
+        \chead{}
+        \lhead{}
+        \rhead{}
+        %Fjerner linjen i sidehovedet
+        \renewcommand{\headrulewidth}{0pt}
+
+        \tableofcontents
+        \newpage
+        \setcounter{page}{1}
+        %\include{Tasks/Introduction}
+        \input{Tasks/Task1}
+        %\input{Tasks/Task_2}
+        %\input{Tasks/Task_3}
+        %\includepdf[pages=-, offset=-30 50]{Materials/DPsarah.pdf}
+        %\includepdf[pages=-, offset=-30 50]{Materials/DPTorben.pdf}
+        \end{document}
