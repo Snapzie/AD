@@ -1,0 +1,10 @@
+\section{Task 4}
+I RB-Insert ser vi på linje 1-8 at z får en plads som blad, og at y bliver sat til z's parent. Dvs. at størrelsen på y og alle y's forfædre vil blive en større. Vi kan derfor tilføje en while løkke efter linje 8, som bevæger sig op i træet og opdaterer forfædrenes størrelse med en.
+\begin{lstlisting}
+	while(y != nil)
+		y.size += 1
+		y = y.P
+\end{lstlisting}
+Efter dette mangler vi kun at sætte selve z's størrelse til en, og dette kan gøres trivielt.\\
+
+I RB-INSERT-FIXUP ser vi at algoritmen udelukkende ændre farve attributterne og omrokerer undertræer ved brug af LEFT-ROTATE og RIGHT-ROTATE som vi antager korrekt opdaterer size attributten. Dvs. algoritmen hverken fjerner eller tilføjer noder i træet uden brug af LEFT-ROTATE og RIGHT-ROTATE, så der forekommer ingen andre størrelsesændringer.
