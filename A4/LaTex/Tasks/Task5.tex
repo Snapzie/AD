@@ -1,0 +1,15 @@
+\section{Task 5}
+
+I følgende ønsker vi at bestemme køretiden af RB-Insert, RB-Delete og Get-kth-key på et træ, efter de er modificeret til at opdatere størrelsen på hver enkelt knude.\\
+
+I følgende antager vi, at vi arbejder på RB-træer.\\
+
+Til RB-Insert har vi tilføjet en while-løkke, som sørger for at
+opdatere størrelsen på alle forfædre til bladet z. Dvs, at vi foretager en konstant-tids operation på et antal af elementer, som udgør højden på træet, som, da træet er et RB-træ, har højden lg(n).
+Da RB-Insert før havde en køretid på O(lg(n)) tid, og vi tilføjer en while-løkke som ligeså kører i O(lg(n)) tid, da vil den samlede tid af RB-Insert forblive uforandret med en køretid på O(lg(n)) tid. \\
+
+I RB-Delete ville vi, ligesom i RB-Insert, kunne indsætte selv samme while-løkke, blot hvor vi for hvert blad formindsker size med 1 (While-løkken vil altså køre i O(lg(n)) tid). Da RB-Delete kørte i O(lg(n)) tid før, da ville dens køretid efter at have indsat vores while-løkke ligeså køre i O(lg(n)) tid.\\
+
+Vores Query-algoritme fra Task 1 vil køre i O(lg(n)) tid.
+Dette skyldes, at vi foretager en konstant-tids operation worst case for hvert element i højden af træet, som for et RB-træ er lg(n). Dvs, at algoritmen kører i O(lg(n)) tid.
+
