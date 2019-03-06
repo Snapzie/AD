@@ -1,5 +1,7 @@
 \section{Task 3}
 
+Ændre pseudokoden til \textbf{Left-Rotate}, så den korrekt opdatere størrelsen på hver knude:\\
+
 Vi observerede, at Left-Rotation ikke er afhængig af størrelsen på undetræerne, idet at rotationen foregår, hvorfor det ikke er nødvendigt at opdatere disse indtil efter roationen er foregået.\\
 På figur \text{Z} ser vi, at undertræerne, som ikke direkte påvirkes af rotationen (I figuren $\alpha$, $\beta$, $\gamma$), beholder sine undertræer under hele rotationen og dermed bibeholder deres oprindelige størrelse.
 Vi kan derfor tilføje opdateringer (på linje 13-14) til algoritmen LEFT-ROTATE(T,x), som den ses i CLRS side 313, for at reflektere størrelsesændringen i x og y. Opdateringerne vil være:
