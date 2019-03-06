@@ -1,4 +1,7 @@
 \section{Task 4}
+
+I følgende modificerer vi pseudokoden for algoritmerne RB-Insert og RB-Insert-Fixup (som set i CLRS), således at de korrekt opdaterer knudens størrelse.\\
+
 I RB-Insert ser vi på linje 1-8 at z får en plads som blad, og at y bliver sat til z's parent. Dvs. at størrelsen på y og alle y's forfædre vil blive en større. Vi kan derfor tilføje en while løkke efter linje 8, som bevæger sig op i træet og opdaterer forfædrenes størrelse med en.
 \begin{lstlisting}
 	while(y != nil)
