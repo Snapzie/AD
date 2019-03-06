@@ -1,0 +1,11 @@
+\section{Task 6}
+
+I dette ønsker vi at bestemme worst-case køretid, idet der foretages samlet n insertions/deletions og m queries på et træ.\\
+
+Vi antager, at følgende operationer foretages på et Binary-Search-Tree.\\
+
+Vi bemærker, at køretiden for insert/deletions/Query er værst, jo højere træet er. Et binært søgetræ har maksimalt højden n, hvis alle elementerne ligger på lige linje. Derfor foretages der først de n insertions, således at der skabes en højde på n. Dernæst foretages der m queries på dette træ, som på et træ med højde n kører i O(n) tid. Til sidst foretages der de resterende deletions, som er nul,da der blev foretaget n insertions.\\
+
+Worst-case køretiden på dette træ bliver dermed:\\
+O(n + mn + 0) = O(mn).
+
