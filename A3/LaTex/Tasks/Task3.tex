@@ -1,8 +1,28 @@
 \section{Task 3}
-Vores algoritme tager udgangspunkt i den grådige algoritme fra Task 1 som er vist at køre i $O(n)$ tid.
-Først summerer vi det samlede antal af øl op til en sum s. Dette gøres ved at gå hver bar igennem enkeltvis og tager derfor O(n) tid.
-Vi bemærker, at når B angiver antallet af øl, som baren med flest øl har, da vil $s \leq nB$, når der er n barer.
-Dvs. s = O(nB).
-Vi definerer nu den maksimale mængde øl $\hat{b}$ som $\hat{b} = \frac{s}{n}$, hvilket vi gør, da der maksimalt kan være $\frac{s}{n}$ øl i hver bar, hvis de er perfekt distribueret uden at nogen øl er gået tabt i transport. Vi kører nu algoritmen fra task 1 på dette tal $\hat{b}$ og checker, om det kan lade sig gøre. Hvis ikke, så forsøger vi med én mindre øl i hver bar, hvilket svarer til, at vi fratrækker n fra s og bestemmer $\hat{b}$, hvorefter vi endnu en gang kører algoritmen fra Task 1 med vores nye værdi for $\hat{b}$. Denne procedurer fortsættes indtil vi finder en værdi for $\hat{b}$, for hvor algoritmen fra Task 1 returnerer True.
-Vi bemærker altså, at vi kører algoritmen fra Task 1, som kører O(n) tid, maksimalt $\frac{s}{n}$ gange. Og da s = O(nB), da vil $\frac{s}{n} = \frac{O(nB)}{n} = O(nlog_n(B))$.
-Samlet får vi altså en køretid på $O(n + nlog_n(B)) = O(nlog(B))$.
+I følgende skrives pseudokode til at bestemme den maksimale antal øl $\hat{b}$, som enhver bar kan have. Koden tager udgangspunkt i vores algoritme fra task 1 (I følgende kaldet Alg), som kører i $O(n)$ tid.
+
+Først indser vi, at det absolut maksimale antal øl en bar kan have er gennemsnittet af samtlige øl fordelt over alle barer. Vi bestemmer dette gennemsnit $s$, som vil være af størrelsesordenen $O(B)$.
+Dernæst foretages der binær søgning på intervallet $0-s$, hvor at algoritmen fra task 1 køres på hver værdi. Pseudokode er:\\
+
+\begin{lstlisting}
+  AlgBin(b_bar, B, P):
+      s = 0
+      for i = 1 to n do:
+          s+=B[i]
+      s = s/n
+      L = 0
+      R = s
+      while (L <= R) do:
+          s = floor(L+R/2)
+          if (Alg(s, B, P)):
+            L = s+1
+          else:
+            R = s-1
+      return s
+\end{lstlisting}
+
+Denne algoritme må nødvendigvis være korrekt, da den i hver iteration af while-løkken leder i et interval mellem min og max, indtil 
+denne interval er blevet indsnærpet til netop det ene element, der i så fald returneres. 
+Køretiden må ligeså være $O(nlog(B))$, da der først summeres i $n$ tid, og dernæst køres algoritmen fra task 1 maksimalt $log_2(B)$ gange, 
+hvorfor køretiden samlet bliver $O(nlog(B))$
+
