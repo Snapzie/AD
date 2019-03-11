@@ -2,7 +2,7 @@
 I følgende skrives pseudokode til at bestemme den maksimale antal øl $\hat{b}$, som enhver bar kan have. Koden tager udgangspunkt i vores algoritme fra task 1 (I følgende kaldet Alg), som kører i $O(n)$ tid.
 
 Først indser vi, at det absolut maksimale antal øl en bar kan have er gennemsnittet af samtlige øl fordelt over alle barer. Vi bestemmer dette gennemsnit $s$, som vil være af størrelsesordenen $O(B)$.
-Dernæst foretages der binær søgning på intervallet $0-s$, hvor at algoritmen fra task 1 køres på hver værdi. Pseudokode er:\\
+Dernæst foretages der binær søgning på intervallet $0$ til $s$, hvor at algoritmen fra task 1 køres på hver værdi. Pseudokode er:\\
 
 \begin{lstlisting}
   AlgBin(b_bar, B, P):
@@ -22,7 +22,7 @@ Dernæst foretages der binær søgning på intervallet $0-s$, hvor at algoritmen
 \end{lstlisting}
 
 Denne algoritme må nødvendigvis være korrekt, da den i hver iteration af while-løkken leder i et interval mellem min og max, indtil 
-denne interval er blevet indsnærpet til netop det ene element, der i så fald returneres. 
-Køretiden må ligeså være $O(nlog(B))$, da der først summeres i $n$ tid, og dernæst køres algoritmen fra task 1 maksimalt $log_2(B)$ gange, 
-hvorfor køretiden samlet bliver $O(nlog(B))$
+dette interval er blevet indsnærpet til netop det ene element, der i så fald returneres. 
+Køretiden må således være $O(nlog(B))$, da der først summeres i $n$ tid, og dernæst køres algoritmen fra task 1 maksimalt $log_2(B)$ gange, 
+hvorfor køretiden samlet bliver $O(nlog(B))$.
 
