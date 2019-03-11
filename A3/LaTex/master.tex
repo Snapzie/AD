@@ -18,6 +18,16 @@
     \usepackage[final]{pdfpages}
     \usepackage{parskip}
     
+    \definecolor{light-gray}{gray}{0.85}
+    \lstset{
+    	numbers=left,
+    	breaklines=true,
+    	backgroundcolor=\color{light-gray},
+    	tabsize=2,
+    	basicstyle=\ttfamily,
+    	literate={\ \ }{{\ }}1
+    }
+    
     \pagestyle{fancy}
     
     \title{AD A3}
