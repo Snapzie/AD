@@ -2,13 +2,13 @@
 Vi Bliver bedt om at give pseudokode for algoritmen GET-KTH-KEY(x,k)
 \begin{lstlisting}
 	GET-KTH-KEY(x,k):
-		if(k < 1 || k > x.size + 1)
+		if(k < 1 || k > x.size)
 			return nil
-		elif(x.size == 0)
+		elif(x.size == 1)
 			return x.key
 		elif(x.size - x.right.size == k)
 			return x.key
-		elif(x.left.size + 1 >= k)
+		elif(x.left.size >= k)
 			return GET-KTH-KEY(x.left, k)
 		else
 			return GET-KTH-KEY(x.right, k - (x.size - x.right.size))
