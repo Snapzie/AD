@@ -2,9 +2,9 @@
 Vi Bliver bedt om at give pseudokode for algoritmen GET-KTH-KEY(x,k)
 \begin{lstlisting}
 	GET-KTH-KEY(x,k):
-		if(k < 1 || k > x.size)
+		if(k < 1 || k > x.size + 1)
 			return nil
-		elif(x.size == 1)
+		elif(x.size == 0)
 			return x.key
 		elif(x.size - x.right.size == k)
 			return x.key
