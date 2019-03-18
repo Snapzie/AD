@@ -4,7 +4,7 @@ Vi Bliver bedt om at give pseudokode for algoritmen GET-KTH-KEY(x,k)
 	GET-KTH-KEY(x,k):
 		if(k < 1 || k > x.size)
 			return nil
-		elif(x.size == 1)
+		elif(x.size == 0)
 			return x.key
 		elif(x.size - x.right.size == k)
 			return x.key
