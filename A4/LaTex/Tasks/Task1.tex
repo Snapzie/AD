@@ -11,6 +11,6 @@ Vi Bliver bedt om at give pseudokode for algoritmen GET-KTH-KEY(x,k)
 		elif(x.left.size >= k)
 			return GET-KTH-KEY(x.left, k)
 		else
-			return GET-KTH-KEY(x.right, k - x.left.size)
+			return GET-KTH-KEY(x.right, k - (x.size - x.right.size))
 \end{lstlisting}
 
