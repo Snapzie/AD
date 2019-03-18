@@ -2,7 +2,6 @@
 I følgende ønsker vi at bestemme køretiden for en algoritme, som for en graf $G(H)$ finder et MST og returnerer samtlige kanter for dette træ.
  
 For vores graf $G(H)$, vil det gælde, at det har $\Theta(n^2)$ kanter.\\
-Ved at benytte Prims Algoritme på denne graf, starter vi med at lave en min-heap, som kan laves i $O(n)$ tid. Hver $n-1$ kant kan for denne min-heap fjernes i $O(log(n))$ tid. Omrykningerne i min-heapen, efter en kant er blevet fjernet, foregår derfor i $O(log(n))$ tid.
-Hver kant inspiceres blot én gang i løbet af algoritmen. Da der er $O
-\Theta(n^2)$ kanter, så får vi dernæst en samlet køretid på $O(n^2log(n))$.\\
-Da vi skal printe samtlige kanter i vores MST, af hvilke der er $m$, tager dette$O(m)$ tid, hvorfor den samlede køretid er $O(n^2log(n) + m) = O(n^2log(n))$.
+Ved at benytte Prims Algoritme på denne graf, starter vi med at lave en min-heap, som kan laves i $O(n)$ tid. Hver kant, af hvilke der er $n-1$, kan for denne min-heap fjernes i $O(log(n))$ tid. Omrykningerne i min-heapen, efter en kant er blevet fjernet, foregår derfor i $O(log(n))$ tid.
+Hver kant inspiceres blot én gang i løbet af algoritmen. Da der er $\Theta(n^2)$ kanter, så får vi dernæst en samlet køretid på $O(n^2log(n))$.\\
+Da vi skal printe samtlige kanter i vores MST, af hvilke der er $m$, tager dette $O(m)$ tid, hvorfor den samlede køretid er $O(n^2log(n) + m) = O(n^2log(n))$.
